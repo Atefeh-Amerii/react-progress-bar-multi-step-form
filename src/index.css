@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0e0d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+.container {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.component-step {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0b0e0d;
+}
+
+.progress_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 5px;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  z-index: 1;
+  transition: all 0.8s ease-in;
+  border-radius: 5px;
+
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  padding: 4px 40px;
+  background-color: #0f0c0c;
+  border: none;
+}
+
+.btn:active {
+  outline: none;
+  transform: scale(0.98);
+}
+
+.disabled {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 4px 40px;
+  background-color: #a8a8a8;
+}
